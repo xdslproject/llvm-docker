@@ -25,6 +25,7 @@ RUN mkdir -p /usr/local/bin /usr/local/lib
 # Copy only the needed tools and their required libraries
 COPY --from=builder /usr/local/bin/mlir-opt /usr/local/bin/
 COPY --from=builder /usr/local/bin/mlir-translate /usr/local/bin/
+COPY --from=builder /usr/local/bin/mlir-cpu-runner /usr/local/bin/
 COPY --from=builder /usr/local/bin/clang /usr/local/bin/
 COPY --from=builder /usr/local/bin/llc /usr/local/bin/
 

@@ -16,7 +16,7 @@ FROM ubuntu:22.04
 
 # Install only the minimal runtime dependencies
 RUN apt-get update && apt-get install -y \
-    libz3-dev libedit-dev libzstd-dev git make \
+    libz3-dev libedit-dev libzstd-dev git make gpg \
     && rm -rf /var/lib/apt/lists/*
 
 # Create directory structure

@@ -5,7 +5,7 @@ LABEL org.opencontainers.image.description="LLVM Docker image for xdslproject"
 LABEL org.opencontainers.image.licenses=MIT
 
 # Install xz-utils
-# Install dependencies and LLVM 20.1.7
+# Install dependencies and LLVM 21.1.1
 RUN apt-get update && apt-get install -y \
     wget xz-utils libz3-dev libedit-dev libzstd-dev git make gpg lsb-release software-properties-common \
     && wget https://apt.llvm.org/llvm.sh \
